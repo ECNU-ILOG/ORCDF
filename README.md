@@ -6,7 +6,7 @@
 
 # Update :fire::fire:
 
-We have updated the other three datasets Junyi, Nips20, XES3G5M
+> We have updated the Junyi, Nips20, and XES3G5M datasets. If there are any further questions from the reviews, please feel free to raise them, and we will provide detailed responses after April 11 (AOE).
 
 
 

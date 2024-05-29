@@ -1,14 +1,7 @@
-# Implemention of ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis Framework for Student Learning in Online Education Systems
+# :sparkles: :sparkles: <u>ORCDF</u>-KDD 2024 :sparkles::sparkles:
 
-
-
-
-
-# Update :fire::fire:
-
-> We have updated the Junyi, Nips20, and XES3G5M datasets. If there are any further questions from the reviews, please feel free to raise them, and we will provide detailed responses after April 11 (AOE).
-
-
+:smile_cat: Welcome to ORCDF, this is a comprehensive repository specializing in ***ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis
+Framework for Student Learning in Online Education Systems*** published in KDD 2024.
 
 
 
@@ -26,3 +19,26 @@ python exp_orcdf.py --method=orcdf --if_type=ncd --data_type=Assist17 --ssl_temp
 
 - if_type: To control which Cognitive Diagnosis Model  to integrate into ORCDF, options like kancd, ncd, and others can be selected.
 - gcn_layer: Controlling the number of layers in the Response-aware Graph Convolution (RGC).
+
+
+
+# Reference :thought_balloon:
+
+Hong Qian, Shuo Liu, Mingjia Li, Bingdong Li, Zhi liu, Aimin Zhou "ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis Framework for Student Learning in Online Education Systems." In Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2024.
+
+
+
+## Bibtex
+
+## 
+
+```
+@inproceedings{liu2024kdd,
+author = {Hong Qian, Shuo Liu, Mingjia Li, Bingdong Li, Zhi liu, Aimin Zhou},
+booktitle = {Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+title = {ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis Framework for Student Learning in Online Education Systems},
+year = {2024},
+address={Barcelona, Spain}
+}
+```
+

@@ -157,7 +157,7 @@ python exp_orcdf.py --method=orcdf --if_type=ncd --data_type=Assist17 --ssl_temp
 |          | DOA        | -      | -         | -       | -         | 68.01   | **73.93** | 69.03     | **73.89** | OOM     | OOM       | 73.50    | **73.62** |
 |          | MND        | -      | -         | -       | -         | 1.04    | **19.37** | 2.83      | **35.26** | OOM     | OOM       | 6.43     | **16.67** |
 
-
+**<u>As shown in the table, incorporating existing CDMs with ORCDF can significantly alleviate the oversmoothing issue and greatly enhance both predictive performance and interpretability. This also validates that the oversmoothing problem has a substantial impact on student diagnosis.</u>**
 
 # Reference :thought_balloon:
 

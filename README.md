@@ -63,9 +63,45 @@ Since CD is an upstream task, addressing this issue is urgent. For instance, if 
 
 
 
+# Discussion about why ORCDF can alleviate the oversmoothing issue.
+
+> I believe a more direct question is why use graph neural networks to address the oversmoothing problem? Aren't multi-layer graph neural networks the cause of the oversmoothing problem? I will address these questions one by one.
+
+## What cause the oversmoothing issue in cognitive diagnosis :question:
+
+Firstly, the oversmoothing issue in CDMs occurs in almost all CDMs (most of which are not graph neural networks) as shown in the above Figure, indicating that the oversmoothing issue in CDMs is not identical to the GNN domain (caused by multi-layer GNNs). 
+
+**We believe that the main reason for this phenomenon in CDMs is due to existing CDMs not capturing the unique response signal (right or wrong) between students and exercises in the process of constructing representations.**
+
+Let's denote two students as $s_a$ and $s_b$, both of whom have attempted many exercises ($e_1$, $e_2$, ..., $e_M$). The key distinction lies in the fact that $s_a$ answers $e_1$ correctly, while $s_b$ answers $e_1$ incorrectly. Their performance on other exercises is identical.
+
+Previous CDMs primarily concentrate on updating representations of students and exercises by recovering the response signals between them (i.e., they only utilize the labels in the objective function in BCE loss). They do not consider incorporating this response signal, which is a unique characteristic of students, when constructing representations.
+
+Therefore, this leads to nearly identical representations of $s_a$ and $s_b$ learnd by existing CDMs, and this phenomenon occurs among many students, thereby leading to the occurrence of the oversmoothing problem.
 
 
 
+## What did ORCDF do :question:
+
+**So, our core idea is to incorporate the unique information of the response signal into the process of constructing representations.**
+
+To efficiently incorporate this information into the representations, in this paper, we encode the response signals within a proposed Response Graph, which is a tripartite graph. The nodes consist of students, exercises, and concepts, while the edge types include the response signals between students and exercises.
+
+Later, favored by our uniquely designed message passing mechanism, through the response graph, representations of all correctly and incorrectly answered exercises by a student will be passed to this student node. **Therefore, the final representations of $s_a$ and $s_b$ will differ because of their different relationships with the exercise node $e_1$ in the response graph.**
+
+**We acknowledge that using GNNs is not the only choice, but utilizing the message passing mechanism enables a more efficient capture of the differences among students. Therefore, we are not employing GNNs to alleviate the oversmoothing issue, but rather to obtain unique representations of each student by capturing their distinct response signals to each exercise.**
+
+Finally, as shown in Table below, our proposed ORCDF can be applied to any existing CDMs and significantly improves the MND values. This experiment result indicates that ORCDF indeed alleviates the oversmoothing issue.
+
+Different from the representations utilized in GNNs, which are often used for tasks such as node prediction and link prediction, our representations are provided to teachers in real-world scenarios to assist them in diagnosing students. For teachers, $s_a$ and $s_b$ actually have significant differences, but existing CDMs often provide very similar diagnoses. **By integrating ORCDF with existing CDMs, we alleviate this issue and promote the practical application of CDMs in real-world settings.**
+
+
+
+## Multiple layers of RGC :deer:
+
+Regarding the oversmoothing issue caused by multi-layered GNNs, our proposed RGC did not encounter similar issues with multi-layered RGCs. This may be attributed to the heterogeneity of the response graph that we introduced.
+
+![Sample Image](./img/rgc.png)
 
 # Example
 

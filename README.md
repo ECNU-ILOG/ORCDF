@@ -1,21 +1,28 @@
-# :sparkles: :sparkles: <u>ORCDF</u>-KDD 2024 :sparkles::sparkles:
+- # :sparkles: :sparkles: <u>ORCDF</u>-KDD 2024 :sparkles::sparkles:
+
 
 :smile_cat: Welcome to ORCDF, this is a comprehensive repository specializing in ***ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis
 Framework for Student Learning in Online Education Systems*** published in KDD 2024.
 
 ![Sample Image](./img/cd.png)
 
-# Abstract :a:
+# Abstract and Contribution :flight_arrival:
 
-Cognitive diagnosis models (CDMs) are designed to learn students' mastery levels using their response logs. CDMs play a fundamental role in online education systems since they significantly influence downstream applications such as teachers' guidance and computerized adaptive testing. Despite the success achieved by existing CDMs, we find that they suffer from a thorny issue that the learned students' mastery levels are too similar. This issue, which we refer to as oversmoothing, could diminish the CDMs' effectiveness in downstream tasks. 
+Cognitive diagnosis models (CDMs) are designed to learn students' mastery levels using their response logs. CDMs play a fundamental role in online education systems since they significantly influence downstream applications such as teachers' guidance and computerized adaptive testing. Despite the success achieved by existing CDMs, we find that they suffer from a thorny issue that the learned students' mastery levels are too similar. ***This issue, which we refer to as oversmoothing, could diminish the CDMs' effectiveness in downstream tasks.*** 
 
-CDMs comprise two core parts: learning students' mastery levels and assessing mastery levels by fitting the response logs. This paper contends that the oversmoothing issue arises from that existing CDMs seldom utilize response signals on exercises in the learning part but only use them as labels in the assessing part. 
+CDMs comprise two core parts: learning students' mastery levels and assessing mastery levels by fitting the response logs. 
 
-To this end, this paper proposes an oversmoothing-resistant cognitive diagnosis framework (ORCDF) to enhance existing CDMs by utilizing response signals in the learning part. Specifically, ORCDF introduces a novel response graph to inherently incorporate response signals as types of edges. Then, ORCDF designs a tailored response-aware graph convolution network (RGC) that effectively captures the crucial response signals within the response graph. Via ORCDF, existing CDMs are enhanced by replacing the input embeddings with the outcome of RGC, allowing for the consideration of response signals on exercises in the learning part. Extensive experiments on real-world datasets show that ORCDF not only helps existing CDMs alleviate the oversmoothing issue but also significantly enhances the models' prediction and interpretability performance. Moreover, the effectiveness of ORCDF is validated in the downstream task of computerized adaptive testing.
+<u>**This paper contends that the oversmoothing issue arises from that existing CDMs seldom utilize response signals on exercises in the learning part but only use them as labels in the assessing part.**</u> 
+
+To this end, this paper proposes an oversmoothing-resistant cognitive diagnosis framework (ORCDF) to enhance existing CDMs by utilizing response signals in the learning part. 
+
+- Specifically, ORCDF introduces a novel response graph to inherently incorporate response signals as types of edges. Then, ORCDF designs a tailored response-aware graph convolution network (RGC) that effectively captures the crucial response signals within the response graph. 
+- Via ORCDF, existing CDMs are enhanced by replacing the input embeddings with the outcome of RGC, allowing for the consideration of response signals on exercises in the learning part. 
+- Extensive experiments on real-world datasets show that ORCDF not only helps existing CDMs alleviate the oversmoothing issue but also significantly enhances the models' prediction and interpretability performance. Moreover, the effectiveness of ORCDF is validated in the downstream task of computerized adaptive testing.
 
 
 
-# Brief Introduction :b:
+# Oversmoothing in Cognitive Diagnosis :red_circle:
 
 Despite the success, ***this paper, for the first time, identifies that existing CDMs share a potential and thorny issue that the learned Mas of students are too similar***. ***We refer to this issue as oversmoothing.*** Oversmoothing could diminish the CDMs' effectiveness in down-stream tasks.  
 

@@ -71,6 +71,14 @@ Since CD is an upstream task, addressing this issue is urgent. For instance, if 
 
 Firstly, the oversmoothing issue in CDMs occurs in almost all CDMs (most of which are not graph neural networks) as shown in the above Figure, indicating that the oversmoothing issue in CDMs is not identical to the GNN domain (caused by multi-layer GNNs). 
 
+> Therefore, it is evident that the cause of the oversmoothing phenomenon in cognitive diagnosis is not the multi-layer graph neural networks.
+
+> During the review, an anonymous reviewer suggested that this phenomenon is due to the knowledge points appearing only in the training set and not in the test set, leading to the knowledge coverage problem, which was discussed in the KaNCD paper.
+
+We greatly appreciate the constructive suggestion from the reviewer. We agree that the knowledge coverage problem is indeed one of the causes of the oversmoothing issue; however, this is a data-level problem.
+
+**However, even methods like KaNCD that can address the knowledge coverage problem still exhibit very small MND values, indicating that this is not the core reason.**
+
 **We believe that the main reason for this phenomenon in CDMs is due to existing CDMs not capturing the unique response signal (right or wrong) between students and exercises in the process of constructing representations.**
 
 Let's denote two students as $s_a$ and $s_b$, both of whom have attempted many exercises ($e_1$, $e_2$, ..., $e_M$). The key distinction lies in the fact that $s_a$ answers $e_1$ correctly, while $s_b$ answers $e_1$ incorrectly. Their performance on other exercises is identical.

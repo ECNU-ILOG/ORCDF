@@ -95,6 +95,8 @@ Therefore, this leads to nearly identical representations of $s_a$ and $s_b$ lea
 
 To efficiently incorporate this information into the representations, in this paper, we encode the response signals within a proposed Response Graph, which is a tripartite graph. The nodes consist of students, exercises, and concepts, while the edge types include the response signals between students and exercises.
 
+![Sample Image](./img/rg.png)
+
 Later, favored by our uniquely designed message passing mechanism, through the response graph, representations of all correctly and incorrectly answered exercises by a student will be passed to this student node. **Therefore, the final representations of $s_a$ and $s_b$ will differ because of their different relationships with the exercise node $e_1$ in the response graph.**
 
 **We acknowledge that using GNNs is not the only choice, but utilizing the message passing mechanism enables a more efficient capture of the differences among students. Therefore, we are not employing GNNs to alleviate the oversmoothing issue, but rather to obtain unique representations of each student by capturing their distinct response signals to each exercise.**

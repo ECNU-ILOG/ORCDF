@@ -111,6 +111,14 @@ Regarding the oversmoothing issue caused by multi-layered GNNs, our proposed RGC
 
 ![Sample Image](./img/rgc.png)
 
+------
+
+If you still have questions about the oversmoothing phenomenon or about ORCDF, you are welcome to raise an issue on GitHub or directly email me at shuoliu@stu.ecnu.edu.cn.
+
+------
+
+
+
 # Example
 
 Here, we provide an example for running ORCDF. The steps for running the other benchmarks are the same.

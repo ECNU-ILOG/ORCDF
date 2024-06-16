@@ -26,9 +26,40 @@ To this end, this paper proposes an oversmoothing-resistant cognitive diagnosis 
 
 Despite the success, ***this paper, for the first time, identifies that existing CDMs share a potential and thorny issue that the learned Mas of students are too similar***. ***We refer to this issue as oversmoothing.*** Oversmoothing could diminish the CDMs' effectiveness in down-stream tasks.  
 
+To support the motivation of this paper and reveal the oversmoothing issue, we conduct a pilot study on four real-world datasets collected from the online education systems, ensuring a diverse range of circumstances in the students' response logs. 
+
+> We consider the result at the final step, which is input into the interaction function, as the student's mastery level learned by the CDMs.  For more details, you can refer to the `get_mastery_level` function in the code repository.
+
+The learned mastery level of students by CDMs is a matrix with the number of rows equal to the number of students and the number of columns equal to the number of knowledge concepts.
+
+We propose a metric called mean **<u>normalized difference (MND)</u>**. 
+
+![Sample Image](./img/mnd.png)
+
+```python
+ def mean_average_distance(mastery_level, eval_func='mse'):
+        n = mastery_level.shape[0]
+        if eval_func == 'mse':
+            row_sums = np.sum(mastery_level ** 2, axis=1)
+            sum_square_diff = row_sums[:, np.newaxis] + row_sums - 2 * np.dot(mastery_level, 			              mastery_level.T)
+            sum_square_diff = np.maximum(sum_square_diff, 0)
+            rmse = np.sqrt(sum_square_diff / mastery_level.shape[1])
+            return np.sum(rmse) / n / (n - 1)
+        else:
+            dot_product = np.dot(mastery_level, mastery_level.T)
+            norms = np.linalg.norm(mastery_level, axis=1)
+            norm_product = np.outer(norms, norms)
+            cosine_similarity_matrix = dot_product / norm_product
+            return np.sum(np.ones(shape=(n, n)) - cosine_similarity_matrix) / n / (n - 1)
+```
+
+Intuitively, the larger the MND value, the bigger the difference among students' Mas that learned by CDMs. 
+
 ![Sample Image](./img/oversmoothing.png)
 
+**As shown in the above Figure, although CDMs such as NCDM, CDMFKC, KSCD and KaNCD achieve commendable prediction performance, the MND values of Mas they have learned are quite small and hard to distinguish.** 
 
+Since CD is an upstream task, addressing this issue is urgent. For instance, if teachers rely on the outcomes of CD to assist student development, exceedingly subtle distinctions could lead to confusion. Intuitively, if MND is 0.005, it implies that the average difference in Mas for two students in a class on certain concepts is merely 0.005 (e.g., 0.51 and 0.515). Such a small margin could potentially bring difficulty to teachers to accurately assess the cognitive state of entire class. This not only fails to aid students but could also result in misguided instruction. Moreover, for downstream algorithms, a diagnosis result plagued by oversmoothing may lead to erroneous recommendations of learning materials, causing irreversible impacts on students.
 
 
 
@@ -81,8 +112,6 @@ Hong Qian, Shuo Liu, Mingjia Li, Bingdong Li, Zhi liu, Aimin Zhou "ORCDF: An Ove
 
 
 ## Bibtex
-
-## 
 
 ```
 @inproceedings{liu2024kdd,

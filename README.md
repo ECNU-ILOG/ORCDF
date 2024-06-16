@@ -22,7 +22,7 @@ To this end, this paper proposes an oversmoothing-resistant cognitive diagnosis 
 
 
 
-# Oversmoothing in Cognitive Diagnosis :red_circle:
+# :small_red_triangle: ​Oversmoothing in Cognitive Diagnosis :small_red_triangle:
 
 Despite the success, ***this paper, for the first time, identifies that existing CDMs share a potential and thorny issue that the learned Mas of students are too similar***. ***We refer to this issue as oversmoothing.*** Oversmoothing could diminish the CDMs' effectiveness in down-stream tasks.  
 

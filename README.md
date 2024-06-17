@@ -73,7 +73,7 @@ Firstly, the oversmoothing issue in CDMs occurs in almost all CDMs (most of whic
 
 > Therefore, it is evident that the cause of the oversmoothing phenomenon in cognitive diagnosis is not the multi-layer graph neural networks.
 
-> During the review, an anonymous reviewer suggested that this phenomenon is due to the knowledge points appearing only in the training set and not in the test set, leading to the knowledge coverage problem, which was discussed in the KaNCD paper.
+> During the review, an anonymous reviewer suggested that this phenomenon is due to the knowledge concepts appearing only in the training set and not in the test set, leading to the knowledge coverage problem, which was discussed in the KaNCD paper.  Knowledge concepts that do not appear in the training set will have values close to 0.5 after applying the sigmoid function, causing students' abilities on unseen knowledge concepts to be very similar.
 
 We greatly appreciate the constructive suggestion from the reviewer. We agree that the knowledge coverage problem is indeed one of the causes of the oversmoothing issue; however, this is a data-level problem.
 

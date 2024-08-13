@@ -1,5 +1,25 @@
 - # :sparkles: :sparkles: <u>ORCDF</u>-KDD 2024 :sparkles::sparkles:
 
+<div align='center'>
+<h1>ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis Framework for Student Learning in Online Education Systems</h1>
+<a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian*</a>,
+<a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Shuo Liu</a>,
+<a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Mingjia Li</a>,
+<a href='https://faculty.ecnu.edu.cn/_s16/zw2_en_6444/main.psp'>Bingdong Li</a>, 
+<a href='https://faculty.ecnu.edu.cn/_s8/jb2_en/main.psp'>Zhi Liu</a>, and 
+<a href='https://faculty.ecnu.edu.cn/_s16/zam_en/main.psp'>Aimin Zhou</a>. (*Correspondence )
+
+
+<a href='https://aiedu.ecnu.edu.cn/'>Shanghai Institute of AI Education</a>, <a href='http://www.cs.ecnu.edu.cn/'>School of Computer Science and Technology</a>
+
+East China Normal University
+
+<img src='asset/framework.png' />
+</div>
+
+
+
+
 
 :smile_cat: Welcome to ORCDF, this is a comprehensive repository specializing in ***ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis
 Framework for Student Learning in Online Education Systems*** published in KDD 2024.

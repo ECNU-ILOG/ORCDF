@@ -4,20 +4,26 @@
 <h1>ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis Framework for Student Learning in Online Education Systems</h1>
 <a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian*</a>,
 <a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Shuo Liu</a>,
-<a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Mingjia Li</a>,
-<a href='https://faculty.ecnu.edu.cn/_s16/zw2_en_6444/main.psp'>Bingdong Li</a>, 
-<a href='https://faculty.ecnu.edu.cn/_s8/jb2_en/main.psp'>Zhi Liu</a>, and 
-<a href='https://faculty.ecnu.edu.cn/_s16/zam_en/main.psp'>Aimin Zhou</a>. (*Correspondence )
-
+<a>Mingjia Li</a>,
+<a href='https://scholar.google.com/citations?user=0rtt6a0AAAAJ&hl=zh-CN'>Bingdong Li</a>, 
+<a>Zhi Liu</a>, and 
+<a href='https://scholar.google.com/citations?user=E4GQv5cAAAAJ&hl=en&oi=ao'>Aimin Zhou</a>. (*Correspondence )
 
 <a href='https://aiedu.ecnu.edu.cn/'>Shanghai Institute of AI Education</a>, <a href='http://www.cs.ecnu.edu.cn/'>School of Computer Science and Technology</a>
 
 East China Normal University
 
+<a href='https://github.com/ECNU-ILOG/ORCDF'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
+<a href='https://github.com/ECNU-ILOG/ORCDF/blob/main/ORCDF-KDD-2024.pdf'><img src='https://img.shields.io/badge/Paper-PDF-orange'></a>
+
+
+
+
+
 <img src='img/framework.png' />
 </div>
 
-
+------
 
 
 

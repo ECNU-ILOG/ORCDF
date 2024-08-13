@@ -1,4 +1,4 @@
-- # :sparkles: :sparkles: <u>ORCDF</u>-KDD 2024 :sparkles::sparkles:
+
 
 <div align='center'>
 <h1>ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis Framework for Student Learning in Online Education Systems</h1>
@@ -14,7 +14,7 @@
 
 East China Normal University
 
-<img src='asset/framework.png' />
+<img src='img/framework.png' />
 </div>
 
 

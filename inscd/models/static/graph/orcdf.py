@@ -18,7 +18,7 @@ class ORCDF(_CognitiveDiagnosisModel, AbstractModel):
     def __init__(self, student_num: int, exercise_num: int, knowledge_num: int, save_flag=False):
         """
         Description:
-        SSCDF ...
+        ORCDF ...
 
         Parameters:
         student_num: int type
@@ -51,7 +51,7 @@ class ORCDF(_CognitiveDiagnosisModel, AbstractModel):
         # else:
         #     latent_dim = self.knowledge_num
 
-        self.extractor = SSCDF_Extractor(
+        self.extractor = ORCDF_Extractor(
             student_num=self.student_num,
             exercise_num=self.exercise_num,
             knowledge_num=self.knowledge_num,

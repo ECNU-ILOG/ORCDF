@@ -1,0 +1,14 @@
+{
+  "dataset": "NeurIPS2020",
+  "files": {
+    "graph": "graph.csv",
+    "hierarchy": "hierarchy.csv",
+    "q_matrix": "q_matrix.csv",
+    "response": "response.csv"
+  },
+  "info": {
+    "student_num": 2840,
+    "exercise_num": 6000,
+    "knowledge_num": 268
+  }
+}

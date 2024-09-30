@@ -30,6 +30,10 @@ East China Normal University
 :smile_cat: Welcome to ORCDF, this is a comprehensive repository specializing in ***ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis
 Framework for Student Learning in Online Education Systems*** published in KDD 2024.
 
+## 📰 News 
+- [x] [2024.9.30] Fix the dataset bugs and provide the guidance of how to run baselines.
+- [x] [2024.8.29] ORCDF v1.0 is released.
+
 ![Sample Image](./img/cd.png)
 
 # Abstract and Contribution :flight_arrival:

@@ -9,7 +9,7 @@
 <a>Zhi Liu</a>, and 
 <a href='https://scholar.google.com/citations?user=E4GQv5cAAAAJ&hl=en&oi=ao'>Aimin Zhou*</a>. (*Correspondence )
 
-<a href='http://www.cs.ecnu.edu.cn/'>School of Computer Science and Technology</a>,<a href='https://aiedu.ecnu.edu.cn/'>Shanghai Institute of AI Education</a>
+<a href='http://www.cs.ecnu.edu.cn/'>School of Computer Science and Technology</a>, <a href='https://aiedu.ecnu.edu.cn/'>Shanghai Institute of AI Education</a>
 
 East China Normal University
 

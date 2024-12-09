@@ -2,14 +2,14 @@
 
 <div align='center'>
 <h1>ORCDF: An Oversmoothing-Resistant Cognitive Diagnosis Framework for Student Learning in Online Education Systems</h1>
-<a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian*</a>,
+<a href='https://faculty.ecnu.edu.cn/_s16/qh_en/main.psp'>Hong Qian</a>,
 <a href='https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en'>Shuo Liu</a>,
 <a>Mingjia Li</a>,
 <a href='https://scholar.google.com/citations?user=0rtt6a0AAAAJ&hl=zh-CN'>Bingdong Li</a>, 
 <a>Zhi Liu</a>, and 
-<a href='https://scholar.google.com/citations?user=E4GQv5cAAAAJ&hl=en&oi=ao'>Aimin Zhou</a>. (*Correspondence )
+<a href='https://scholar.google.com/citations?user=E4GQv5cAAAAJ&hl=en&oi=ao'>Aimin Zhou*</a>. (*Correspondence )
 
-<a href='https://aiedu.ecnu.edu.cn/'>Shanghai Institute of AI Education</a>, <a href='http://www.cs.ecnu.edu.cn/'>School of Computer Science and Technology</a>
+<a href='http://www.cs.ecnu.edu.cn/'>School of Computer Science and Technology</a>,<a href='https://aiedu.ecnu.edu.cn/'>Shanghai Institute of AI Education</a>
 
 East China Normal University
 
